@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Code Sample</string>
+    <string name="action_search">Search</string>
+    <string name="repo_list_error_text" translatable="false">Произошла ошибка, попробуйте еще раз</string>
+    <string name="repo_list_out_of_requests" translatable="false">Превышено количество запросов, перезапустите приложение или попробуйте позже</string>
+    <string name="repo_list_no_internet" translatable="false">Нет соединения с интернетом</string>
+    <string name="repo_list_start_state" translatable="false">Начните поиск, чтобы увидеть GitHub репозитории</string>
+    <string name="repo_list_empty_state" translatable="false">Запрос не дал никаких результатов</string>
+    <string name="repo_list_try_again" translatable="false">Попробовать еще раз</string>
+    <string name="repo_details_stars">Звезды:</string>
+    <string name="repo_details_language">Язык:</string>
+    <string name="repo_details_created">Создан:</string>
+    <string name="repo_details_description">Описание:</string>
+    <string name="repo_details_fork">Форк:</string>
+    <string name="repo_details_archived">Архивирован:</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+</resources>

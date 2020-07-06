@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/repoListFragment">
+    <fragment
+        android:id="@+id/repoListFragment"
+        android:name="ru.limeek.codesample.presentation.view.RepoListFragment"
+        android:label="RepoListFragment" >
+        <action
+            android:id="@+id/action_repoListFragment_to_repoDetailsFragment"
+            app:destination="@id/repoDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/repoListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoDetailsFragment"
+        android:name="ru.limeek.codesample.presentation.view.RepoDetailsFragment"
+        android:label="RepoDetailsFragment" >
+        <argument
+            android:name="repo"
+            app:argType="ru.limeek.codesample.domain.entities.GithubRepo" />
+        <action
+            android:id="@+id/action_repoDetailsFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="ru.limeek.codesample.presentation.view.GalleryFragment"
+        android:label="GalleryFragment" >
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+</navigation>
